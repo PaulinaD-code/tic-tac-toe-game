@@ -12,6 +12,8 @@
 body{
   color: var(--orange);
   font-family: "Finger Paint", sans-serif;
+  box-sizing: border-box;
+  background-color: #37505C;
 }
 
 h1{
@@ -27,6 +29,11 @@ h1{
   align-items: center;
   flex-direction: column;
   background-color: #37505C;
+  box-sizing: border-box;
+}
+
+.container h1{
+  text-align: center;
 }
 
 #gameboard{
@@ -70,4 +77,18 @@ button{
 button:hover{
   cursor: pointer;
   transform: translate(-2px);
+}
+
+@media(max-width: 600px){
+  .box{
+    height: 150px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+  }
 }
